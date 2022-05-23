@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="TemplateMo">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+    <title>Busqueda tabu</title>
+
+
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+   
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-finance-business.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+
+  </head>
+
+  <body>
+
+    <!-- ********** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>  
+    <!-- ********** -->
+
+    <!-- Encabezado -->
+    <div class="sub-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-xs-12">
+            <ul class="left-info">
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h2>Trabajo Práctico</h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Concepto
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="historia.html">Historia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="conocimiento.html">Conocimiento</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="metodos.html">Métodos de Búsqueda</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="tabu.html">Búsqueda Tabú</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Cuerpo -->
+    <div class="page-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Búsqueda tabu</h1>
+            <span>IA</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<!--    <div class="more-info about-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="more-info-content">
+              <div class="row">
+                <div class="col-md-6 align-self-center">
+                  <div class="right-content">
+                    
+                    <h2>¿Cómo funciona la <em>búsqueda tabú</em></h2>
+                    
+                  
+             
+            
+                <p>Fusce nec ultrices lectus. Duis nec scelerisque risus. Ut id tempor turpis, ac dignissim ipsum. Nulla ullamcorper, ipsum vel condimentum congue, mi odio vehicula tellus, sit amet malesuada justo sem. 
+                    <br><br>Pellentesque in sagittis lacus, vel auctor sem. Quisque eu quam eleifend, ullamcorper dui nec, luctus quam.<br><br></p>
+                    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div></div>-->
+        
+            <div class="callback-form contact-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+                <span>METODOS DE BUSQUEDA</span>
+              <h2>¿Cómo funciona la<em>búsqueda tabú</em></h2>
+              <br>
+                <p>Los problemas de permutaciones son una clase importante de problemas de optimización, y ofrecen un modo muy útil para demostrar algunas de las consideraciones que deben ser tratadas en el dominio combinatorio.<br>
+                Para este ejercicio supongamos que tenemos un problema de diseño de in material formado por un número de capas aislantes, el orden en el que se acomodan estas capas determina el valor de aislamiento total de un material resultante. El problema consiste en encontrar el orden de las capas para que el material tenga la máxima capacidad de aislamiento. <br>  
+                Si tenemos 7 capas para este material, será necesario idear un método capaz de encontrar una solución óptima explorando un pequeño subconjunto de todas las permutaciones posibles.<br></p>
+                <center><img src="assets/images/tabu_01.jpg" alt=""><br><br><br><br></center>
+                <p>
+                Primero asumimos que puede construirse una solución inicial para este problema de alguna manera inteligente, supongamos que la solución inicial de nuestro problema lo obtenemos intercambiando las capas 5 y 6.<br>
+                </p>
+                <center><img src="assets/images/tabu_02.jpg" alt=""><br><br><br><br></center>
+                <p>
+                  El material resultante tiene un valor de 10 unidades, los métodos de búsqueda tabú operan bajo el supuesto de que se puede construir un entorno para identificar soluciones adyacentes que pueden ser alcanzadas desde la solución actual. Los intercambios por pares son frecuentemente usados para definir entornos en problemas de permutaciones, identificando movimientos que conducen una solución a la siguiente<br>
+                Asociado a cada intercambio hay un valor de movimiento, que representa el cambio sobre un valor de la función objetivo como resultado del intercambio propuesto, en nuestro problema, un intercambio cambia la posición de dos capas, por lo tanto, el entorno completo de una solución está constituido por 21 soluciones adyacentes que pueden ser obtenidas a partir de estos intercambios.<br>
+                   Un mecanismo principal para explotar la memoria en la búsqueda tabú es clasificar un subconjunto de movimientos en un entorno como prohibidos o tabú. La clasificación depende de la historia de búsqueda, determinada mediante lo reciente o frecuente que ciertos movimientos llamados “atributos”, han participado en la generación de soluciones pasadas.<br>
+                    Para evitar la búsqueda de combinaciones repetidas, clasificaremos como tabú todos los intercambios compuestos por cualquiera de los pares de capas más recientes, es decir que un par de capas será tabú por una duración de 3 iteraciones. Dado que intercambiar las capas 2 y 6 es lo mismo que intercambiar las capas 6 y 2, ambos pueden ser representados por el par (2,6). Por lo que es conveniente usar una estructura de datos como la siguiente:<br>
+                </p>
+                <center><img src="assets/images/tabu_03.jpg" alt=""><br><br><br><br></center>
+                <p>
+                    Cada celda contiene el número de iteraciones restantes hasta que las capas correspondientes puedan nuevamente intercambiar posiciones. Si la celda (par de capas) tiene un valor de cero, entonces las capas 3 y 5 son libres para intercambiar posiciones. Si tienen un valor diferente a cero, no pueden intercambiar posiciones (este intercambio sería clasificado como tabú).<br>
+                    Para implementar restricciones tabú se debe tener en cuenta que estas no son inviolables bajo todas las circunstancias. Si un movimiento tabú resultara en una solución mejor que cualquiera visitada hasta ahora, su clasificación tabú puede ser remplazada, a esta condición se le llama “criterio de aspiración”.<br>
+                    La solución de partida tiene un valor de aislamiento de 10, y la estructura de los datos tabú está vacía pues al comienzo de la búsqueda ningún movimiento tiene esta clasificación. Para maximizar localmente el valor de aislamiento del material, intercambiamos las posiciones de las capas 4 y 5, el aumento de este movimiento es de 6 unidades.<br>
+                </p>
+                <center><img src="assets/images/tabu_04.jpg" alt=""><br><br><br><br></center>
+                <p>
+                   La nueva solución tiene un valor de aislamiento de 16, y la estructura tabú ahora muestra el intercambio de las capas 4 y 5, o sea que este no se podrá volver a realizar durante 3 iteraciones.<br> 
+                </p>
+                <center><img src="assets/images/tabu_05.jpg" alt=""><br><br><br><br></center>
+                <p>
+                  El movimiento que proporciona la mayor mejora en este proceso es el intercambio de la capa 3 y 1 con una ganancia de 2. La nueva solución se convierte en la mejor solución encontrada con un valor de aislamiento de 18; y se clasifican como tabú dos intercambios. La entrada (4,5) ha disminuido de 3 a 2, pues ya se ha avanzado una iteración.   
+                </p>
+                <center><img src="assets/images/tabu_06.jpg" alt=""><br><br><br><br></center>
+                <p>
+                 El movimiento que elegiremos a continuación será el de las capas 2 y 4, aunque el aislamiento no mejorará, es el que menos disminuye el valor de aislamiento. La estructura de datos tabú ahora indica 3 movimientos:   <br>
+                </p>
+                <center><img src="assets/images/tabu_07.jpg" alt=""><br><br><br><br></center>
+                <p>
+                   Ahora podemos observar que el intercambio de las capas 4 y 5 (el cual ya se había ejecutado) se clasifica como tabú, pero este intercambio produce un valor de aislamiento mayor, por esta razón usamos el criterio de aspiración para invalidar la clasificación tabú y ejecutar el movimiento.<br> 
+                </p>
+                <center><img src="assets/images/tabu_08.jpg" alt=""><br><br><br><br></center>
+                <p>
+                  
+                    La solución actual se convierte en la mejor solución y el proceso continúa, en algunas situaciones es preferible incrementar el porcentaje de movimientos disponibles que reciben una clasificación tabú.<br><br>
+  
+                </p>
+            </div>
+          </div>
+          <div class="col-md-12">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- pie de pagina -->
+    <footer>
+      <div class="container">
+
+      </div>
+    </footer>
+    
+    <div class="sub-footer">
+      <div class="container">
+        <div class="row">
+
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+     Additional Scripts 
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/accordions.js"></script>
+
+    <script language = "text/Javascript"> 
+      cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+      function clearField(t){                   //declaring the array outside of the
+      if(! cleared[t.id]){                      // function makes it static and global
+          cleared[t.id] = 1;  // you could use true and false, but that's more typing
+          t.value='';         // with more chance of typos
+          t.style.color='#fff';
+          }
+      }
+    </script>
+
+  </body>
+</html>
